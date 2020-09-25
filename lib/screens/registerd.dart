@@ -40,7 +40,7 @@ class _registeredState  extends State<registered> {
     Padding(
     padding: EdgeInsets.symmetric(vertical: 16.0),
     child: Material(
-    color: Colors.deepOrange,
+      color: Color(0xFFFF9800),
     borderRadius: BorderRadius.all(Radius.circular(30.0)),
     elevation: 5.0,
     child: MaterialButton(

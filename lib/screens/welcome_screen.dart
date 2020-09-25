@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:irespondph/screens/login_screens.dart';
 import 'package:irespondph/screens/registration_screen.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 
 class WelcomeScreen extends StatefulWidget {
@@ -32,28 +31,15 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     return Scaffold(
       backgroundColor: animation.value,
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
+        padding: EdgeInsets.symmetric(horizontal: 80.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Row(
               children: <Widget>[
-                Hero(
-                  tag: 'Irespond',
-                  child: Container(
+                   Center(
                     child: Image.asset('images/Irespond.png'),
-                    height: 100.0,
-                  ),
-                ),
-
-                TypewriterAnimatedTextKit(
-                    text: ['I Respond Ph'],
-                    textStyle: TextStyle(
-                      fontSize: 45.0,
-                      fontWeight: FontWeight.w900,
-
-                )
                   ),
               ],
             ),
@@ -64,7 +50,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
                 elevation: 5.0,
-                color: Colors.deepOrange,
+                color: Color(0xFFFF9800),
                 borderRadius: BorderRadius.circular(30.0),
                 child: MaterialButton(
                   onPressed: () {
@@ -95,7 +81,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   height: 42.0,
                   child: Text(
                     'Register',
-                    style: TextStyle(color: Colors.deepOrange),
+                    style: TextStyle(color: Colors.grey),
                   ),
                 ),
               ),
