@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "966174962840",
+    "firebase_url": "https://i-responph.firebaseio.com",
+    "project_id": "i-responph",
+    "storage_bucket": "i-responph.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966174962840:android:70449c8a577a8d1f3d4ced",
+        "android_client_info": {
+          "package_name": "com.example.irespondph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966174962840-n4f11jgm5d60f7ollc0c7n67e52u3ajl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn6RXZ8eEQp-zE7t5REf2N2yS0knpW6gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966174962840-n4f11jgm5d60f7ollc0c7n67e52u3ajl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
