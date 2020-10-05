@@ -3,6 +3,7 @@ import 'package:irespondph/constants.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'blank_screen.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'registration_screen.dart';
 
 
 class LoginScreen extends StatefulWidget {
@@ -38,6 +39,10 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 height: 48.0,
               ),
+              Text(
+                'Email',
+                style: TextStyle(color: Colors.black,fontSize: 18.0,),
+              ),
               TextField(
                   keyboardType: TextInputType.emailAddress,
                 textAlign: TextAlign.center,
@@ -48,6 +53,10 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               SizedBox(
                 height: 8.0,
+              ),
+              Text(
+                'Password',
+                style: TextStyle(color: Colors.black,fontSize: 18.0,),
               ),
               TextField(
                 obscureText: true,
@@ -93,10 +102,33 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
-            ],
+                  InkWell(
+                  onTap: (){
+    Navigator.pushNamed(context, RegistrationScreen.id );
+    },
+    child: Center(
+    child: RichText(
+    text: TextSpan(
+    text: 'Don\'t have an Account?',
+    style: TextStyle(color: Colors.black),
+    children: [
+    TextSpan(
+    text: 'Register',
+    style: TextStyle(
+    color: Colors.teal, fontWeight: FontWeight.bold),
+    )
+            ]),
+    ),
+    ),
+                  )
+  ],
+
+
+
           ),
         ),
       ),
     );
+
   }
 }

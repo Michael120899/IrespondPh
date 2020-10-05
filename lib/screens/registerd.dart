@@ -22,6 +22,8 @@ class _registeredState  extends State<registered> {
     return Scaffold(
         backgroundColor: Colors.white,
         body: SafeArea(
+        child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 80.0),
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -32,7 +34,7 @@ class _registeredState  extends State<registered> {
         style: TextStyle(
         fontFamily: 'Teko',
         fontSize: 40.0,
-        color: Colors.deepOrange,
+        color: Color(0xFFFF9800),
         fontWeight: FontWeight.bold,
 
     ),
@@ -47,7 +49,7 @@ class _registeredState  extends State<registered> {
     onPressed: () {
       Navigator.pushNamed(context, LoginScreen.id);
           },
-    minWidth: 5.0,
+    minWidth: 200.0,
     height: 42.0,
     child: Text(
     'Continue',
@@ -59,6 +61,7 @@ class _registeredState  extends State<registered> {
           ]
     ),
     ),
+        ),
     );
   }
 
