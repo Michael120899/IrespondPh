@@ -33,43 +33,43 @@ class _BlankScreenState extends State<BlankScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-      leading: null,
-      actions: <Widget>[
-        IconButton(
-            icon: Icon(Icons.close),
-            onPressed: () {
-              _auth.signOut();
-              Navigator.pop(context);
-              //Implement logout functionality
-            }),
-    ],
-           ),
+      appBar: AppBar(
+        leading: null,
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.close),
+              onPressed: () {
+                _auth.signOut();
+                Navigator.pop(context);
+                //Implement logout functionality
+              }),
+        ],
+      ),
 
-          body: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              Center(
-                  child: CircleAvatar(
-                radius: 70.0,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage('images/Irespond.png'),
-              )),
-              Text(
-                'I Respond Ph',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Teko',
-                  fontSize: 40.0,
-                  color: Colors.deepOrange,
-                  fontWeight: FontWeight.bold,
-                ),
-              )
-            ],
-          ),
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Center(
+                child: CircleAvatar(
+                  radius: 70.0,
+                  backgroundColor: Colors.white,
+                  backgroundImage: AssetImage('images/Irespond.png'),
+                )),
+            Text(
+              'I Respond Ph',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Teko',
+                fontSize: 40.0,
+                color: Colors.deepOrange,
+                fontWeight: FontWeight.bold,
+              ),
+            )
+          ],
         ),
+      ),
     );
   }
 }
